@@ -1,0 +1,178 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>url shortener api landing page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <nav class="container">
+        <!-- <div class="toggler">
+
+        </div> -->
+        <div class="logo" style="overflow: visible">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="nac">
+          <div class="nav-content">
+            <ul class="nav-items">
+              <li class="nav-item"><a href="#">features</a></li>
+              <li class="nav-item"><a href="#">pricing</a></li>
+              <li class="nav-item"><a href="#">resources</a></li>
+            </ul>
+          </div>
+          <div style="height: 0.1px; background-color: hsl(257, 7%, 63%)"></div>
+          <div class="nav-login">
+            <ul class="nav-items">
+              <li class="nav-item"><a href="#">login</a></li>
+              <li class="nav-item" id="butt">
+                <button class="btn btn-success">
+                  <a href="#" id="signup">sign up</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+      <section id="banner">
+        <div class="row" id="illustrationanddescription">
+          <div class="col-5">
+            <img src="images/illustration-working.svg" id="illustration" />
+          </div>
+          <div class="col-7" id="descriptionheader container">
+           <header>
+            <h1>
+              more than just <br />
+              shoter links
+            </h1>
+           </header>
+
+            <p id="subtext">
+              Build your brand’s recognition and get detailed <br />
+              insights on how your links are performing.
+            </p>
+            <button class="btn btn-success" id="started">
+              <a href="#">Get Started</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="searchbg">
+        <input
+          type="text"
+          id="searchbar"
+          placeholder="shorten a link here..."
+        />
+        <button class="btn btn-success" id="started">
+          <a href="#">Get Started</a>
+        </button>
+      </div>
+
+      <section id="search" class="container">
+        <div class="advancedstats">
+         <header> <h1>advanced statistics</h1></header>
+          <br />
+          <p id="advancedsubtext" style="">
+            Track how your links are performing across the web with <br />
+            our advanced statistics dashboard
+          </p>
+        </div>
+        <div class="row" id="cardrow">
+          <div class="card">
+            <div class="iconbox">
+              <img src="images/icon-brand-recognition.svg" />
+            </div>
+            <div class="infobox">
+              <header><h3 class="title">Brand Recognition</h3></header>
+              <p class="content">
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content
+              </p>
+            </div>
+          </div>
+          <div class="card" id="second" style="margin-top: 3rem">
+            <div class="iconbox">
+              <img src="images/icon-detailed-records.svg" />
+            </div>
+            <div class="infobox">
+              <header><h3 class="title">Detailed Records</h3></header>
+              <p class="content">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="lastcard" style="margin-top: 5rem">
+            <div class="iconbox">
+              <img src="images/icon-fully-customizable.svg" />
+            </div>
+            <div class="infobox">
+              <header><h3 class="title">Fully Customizable</h3></header>
+              <p class="content">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="boost" class="container">
+        <div class="row" style="justify-content: center; align-items: center">
+          <div class="boostcontent">
+           <header> <h1>boost your links today</h1></header>
+            <div class="boostbtn">
+              <button class="btn btn-success" id="booststarted">
+                <a href="#" id="boostlink">Get Started</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container" id="footer">
+      <div class="row" id="footercontent">
+        <img src="images/logo.svg" alt="logo" style="filter: invert(100%)" />
+       
+          <div class="features">
+            <header><h4>features</h4></header>
+             <div class="listitem">
+              <p>link shortening</p>
+              <p>branded links</p>
+              <p>analytics</p>
+             </div>
+          </div>
+        <div class="resources">
+          <header><h4>resources</h4></header>
+          <div class="listitem">
+            <p>blog</p>
+            <p>developers</p>
+            <p>support</p>
+           </div></div>
+        <div class="company">
+          <header><h4>company</h4></header>
+          <div class="listitem">
+            <p>about</p>
+            <p>our team</p>
+            <p>careers</p>
+            <p>contact</p>
+           </div></div>
+        <div class="social">
+          <img src="images/icon-facebook.svg" alt="facebook icon" />
+          <img src="images/icon-twitter.svg" alt="facebook icon" />
+          <img src="images/icon-pinterest.svg" alt="facebook icon"/>
+          <img src="images/icon-instagram.svg" alt="facebook icon" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
