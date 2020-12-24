@@ -48,7 +48,6 @@ nav {
     margin-top: 1em; }
   nav ul {
     display: block;
-    margin-left: 2em;
     margin-top: 0.3em; }
     nav ul .nav-items {
       display: block; }
@@ -57,7 +56,8 @@ nav {
       text-align: center;
       padding-bottom: 1.3em; }
       nav ul li button {
-        border-radius: 35px; }
+        border-radius: 35px;
+        width: 100%; }
       nav ul li a {
         color: white;
         font-weight: bold;

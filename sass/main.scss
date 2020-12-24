@@ -15,7 +15,6 @@ $navlinkcolor: hsl(257, 7%, 63%);
 
   ul {
     display: block;
-    margin-left: 2em;
     margin-top: 0.3em;
 
     .nav-items {
@@ -29,6 +28,7 @@ $navlinkcolor: hsl(257, 7%, 63%);
 
       button {
         border-radius: 35px;
+        width: 100%;
       }
 
       a {
