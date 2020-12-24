@@ -1,0 +1,597 @@
+@import "reset";
+@import "defaults";
+$navlinkcolor: hsl(257, 7%, 63%);
+
+ nav {
+  display: block;
+  padding-top: 1em;
+
+  .nac {
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 15px;
+    padding: 2em 1em;
+    margin-top: 1em;
+  }
+
+  ul {
+    display: block;
+    margin-left: 2em;
+    margin-top: 0.3em;
+
+    .nav-items {
+      display: block;
+    }
+
+    li {
+      list-style-type: none;
+      text-align: center;
+      padding-bottom: 1.3em;
+
+      button {
+        border-radius: 35px;
+      }
+
+      a {
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-transform: capitalize;
+      }
+
+      a#signup {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .nav-login {
+    margin-left: auto;
+  }
+}
+
+#banner {
+  margin-top: 2em;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: -999 !important;
+  .col-5 {
+    order: 1;
+  }
+
+  .col-7 {
+    order: 2;
+  }
+
+  #descriptionheader {
+    padding-top: 5em;
+    margin-bottom: 4em;
+    button {
+      border-radius: 35px;
+    }
+  }
+
+  #illustration {
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  #subtext {
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 1em;
+
+    br {
+      display: none;
+    }
+  }
+
+  #started {
+    margin-top: 2em;
+    padding: 1em 2em;
+
+    a {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  h1 {
+    font-size: 1.5em;
+    color: hsl(260, 8%, 14%);
+  }
+}
+
+#search {
+  background-color: hsl(0, 0%, 90%);
+  width: 100%;
+  margin-top: 7em;
+  position: relative;
+  .advancedstats {
+    text-align: center;
+    margin-top: 8em;
+    h1 {
+      color: hsl(260, 8%, 14%);
+    }
+    #advancedsubtext {
+      color: hsl(257, 7%, 63%);
+      line-height: 2rem;
+    }
+  }
+  .card:not([id="lastcard"])::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    bottom: -99px;
+    right: 46%;
+    height: 100px;
+    background-color: hsl(180, 66%, 49%);
+  }
+  // .card:not([id="lastcard"])
+  #cardrow {
+    margin-top: 2em;
+
+    z-index: 999999 !important;
+    .card {
+      margin-top: 1.5em;
+      height: 250px;
+      background-color: #ffffff;
+      width: 100%;
+      margin-bottom: 5em;
+      position: relative;
+      overflow: visible;
+      z-index: 1;
+      padding: 1em;
+#second{
+  margin-top: 1em !important;
+}
+#lastcard{
+  margin-top: 4em;
+}
+      .iconbox {
+        border-radius: 50%;
+        background-color: hsl(257, 27%, 26%);
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        padding-top: 15px;
+        position: absolute;
+        left: 40%;
+        top: -20px;
+        z-index: 2 !important;
+      }
+      .infobox {
+        margin-top: 50px;
+        text-align: center;
+        h3 {
+          color: hsl(260, 8%, 14%);
+        }
+        p.content {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.searchbg {
+  background: url("../images/bg-shorten-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: grid;
+  justify-content: center;
+  padding: 1em;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 15px;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 0%;
+
+  input {
+    margin-right: 2em;
+    border-radius: 10px;
+    border: 0;
+    padding: 1em;
+    font-size: 18px;
+    outline: 0;
+    width: 100%;
+    font-weight: 500;
+    text-transform: capitalize;
+    :focus {
+      border: 4px solid red;
+    }
+  }
+
+  button {
+    margin-top: 2em;
+    border-radius: 10px;
+
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+#boost{
+  background: url("../images/bg-boost-mobile.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: grid;
+  justify-content: center;
+  height: 200px;
+  .row{
+    display: flex;
+    justify-content: center; align-items: center;
+    .boostcontent{
+      h1{
+        color : #ffffff;
+        font-size: 1.5em;
+      }
+    }
+  }
+  .boostbtn{
+    display: flex; justify-content: center; align-items: center;
+    margin-top: 2em;
+    #booststarted{
+      
+    width: 200px;
+      border-radius: 50px;
+     a{
+        color : white;
+        font-weight: 700;
+      }
+      padding: 1em;
+    }
+  }
+
+}
+
+footer{
+  background-color: hsl(260, 8%, 14%);
+  padding: 2em 0;
+  text-align: center;
+  #footercontent{
+    display: block;
+    div{
+      margin-top: 2em;
+     h4{
+      color: #ffffff;
+     }
+      .listitem{
+        margin-top: 1em;
+        p{
+          margin-bottom: 1em;
+        }
+      }
+    }
+    .social{
+      img{
+        margin-right: 20px;
+      }
+    }
+   
+  }
+
+}
+
+  
+@media (min-width: 360px) and (max-width: 370px) and (orientation : portrait){
+  .searchbg {
+    background: url("../images/bg-shorten-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 15px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 155%;
+    height: 150px;
+    z-index: 5;;
+  }
+}
+@media (min-width: 375px) and (max-width: 380px) and (orientation : portrait){
+  .searchbg {
+    background: url("../images/bg-shorten-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 15px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+  bottom: -300px;
+
+    height: 150px;
+    z-index: 5;;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 420px) and (orientation : portrait){
+  .searchbg {
+    background: url("../images/bg-shorten-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 15px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: -370;
+    height: 150px;
+    z-index: 5;;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .logo,
+  li:not([id="butt"]) {
+    padding-top: 10px;
+  }
+
+ nav {
+    display: flex;
+
+    .nac {
+      display: flex;
+      width: 100%;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+
+      hr {
+        display: none;
+      }
+    }
+
+    ul {
+      display: flex;
+      margin-left: 2em;
+      margin-top: 0.3em;
+
+      .nav-items {
+        display: flex;
+      }
+
+      li {
+        list-style-type: none;
+
+        padding-right: 2em;
+
+        a {
+          color: $navlinkcolor;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .nav-login {
+      margin-left: auto;
+    }
+  }
+
+  #banner {
+    text-align: justify;
+    padding-left: 3em;
+z-index: -1;
+height: 75vh;
+    .col-5 {
+      order: 2;
+    }
+
+    .col-7 {
+      order: 1;
+    }
+
+    margin-top: 2em;
+    overflow: hidden;
+
+    #descriptionheader {
+      //   padding-top: 3em;
+      // padding-left: 3em;
+
+      // padding-right: 3em;
+
+      // padding-right: 7em;
+    }
+
+    #subtext {
+      margin: 0;
+      font-size: 18px;
+      line-height: 2rem;
+
+      br {
+        display: block;
+      }
+    }
+
+    #illustration {
+      width: 550px;
+      position: absolute;
+      right: -60;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+  }
+
+  #search {
+    #cardrow {
+      justify-content: space-between;
+      .card {
+        width: 33%;
+        margin-right: 1.5em;
+        padding: 1em;
+        height: 230px;
+        .iconbox {
+          border-radius: 50%;
+          background-color: hsl(257, 27%, 26%);
+          width: 70px;
+          height: 70px;
+          text-align: center;
+          padding-top: 15px;
+          position: absolute;
+          left: 20px;
+          top: -20px;
+         
+          z-index: 3 !important;
+        }
+        .infobox {
+          margin-top: 50px;
+          text-align: left;
+          p.content {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .searchbg {
+    background: url("../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: hsl(257, 27%, 26%);
+    display: grid;
+    grid-template-columns: 900px 200px;
+    justify-content: center;
+    padding: 2em 0;
+    position: absolute;
+    bottom: -130px;
+    height: 120px;
+    // top:-20px;
+    z-index: 99 !important;
+    // left:10%;
+    // right: 10%;
+
+    input {
+      border-radius: 10px;
+      border: 0;
+      padding: 1em;
+      font-size: 18px;
+      outline: 0;
+    }
+
+    button {
+      margin-top: 0 !important;
+      margin-left: 2em;
+    }
+  }
+
+  .card:not([id="lastcard"])::after {
+ width: 80px !important;
+ top:100px !important;
+ height: 10px !important;
+ right: -80px !important;
+  }
+  #boost{
+    background: url("../images/bg-boost-desktop.svg");
+    background-color: hsl(257, 27%, 26%);
+    
+      .row{
+        .boostcontent{
+          h1{
+            font-size: 2.5em;
+          }
+        }
+      }
+     
+    }
+    footer{
+      background-color: hsl(260, 8%, 14%);
+      padding: 2em 0;
+      text-align: left;
+      #footercontent{
+        display: grid;
+        grid-template-columns: 400px auto auto auto auto
+        ;
+        div{
+          margin-top: 0;
+        }
+      }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+body{
+  width: 100%;
+}
+ #banner{
+   height: 40vh;
+   h1{
+     font-size: 4em;
+   }
+   #descriptionheader{
+     padding-right: 600px;
+   }
+   #illustration{
+     width: 450px;
+   }
+ }
+  #cardrow{
+    display: flex;
+  }
+  .searchbg {
+    background: url("../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: hsl(257, 27%, 26%);
+    display: grid;
+    grid-template-columns: 900px 200px;
+    justify-content: center;
+    padding: 2em;
+    //padding-right: 25em;
+    position: absolute;
+   top:55%;
+   //left:10%;
+   right:70%;
+    height: 120px;
+    width: 90%;
+   
+    input{
+      width: 600px;
+      margin-left: 8em;
+    }
+    .btn{
+      
+      position: relative;
+      width: 100%;
+      margin-right: 90em;
+    }
+  }
+  footer{
+    background-color: hsl(260, 8%, 14%);
+    padding: 2em 0;
+    text-align: left;
+    #footercontent{
+      display: grid;
+      grid-template-columns: 350px auto auto auto auto
+      ;
+      div{
+        margin-top: 0;
+      }
+    }
+  }
+}
+

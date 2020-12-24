@@ -1,0 +1,45 @@
+
+body {
+  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  color : hsl(0, 0%, 75%);
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.btn{
+outline: 0;
+border: 0;
+box-sizing: border-box;
+padding: 10px 1em;
+
+color : #ffff !important;
+}
+.btn-success{
+  background-color: hsl(180, 66%, 49%) !important;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+@media (min-width: 1281px){
+  .row{
+      // grid-template-columns: repeat(12 , 1fr);
+      display: flex;
+  }
+
+  .container {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+
+}
